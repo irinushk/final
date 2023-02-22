@@ -1,0 +1,418 @@
+.div_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+/* დაიწყო header */
+header {
+    max-width: inherit;
+    width: inherit;
+    background-color: #9EAEC5;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-family: 'Rubik';
+    color: #F6F5F2;
+    font-size: 2.25rem;
+    font-weight: 700;
+    background-color: hwb(53 56% 25%);
+    width: 196px;
+    height: 100px;
+    border-radius: 0 0 60px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 2s;
+}
+
+.header_logo:hover {
+    font-size: 1.80rem;
+    }
+
+ul {
+    display: flex;
+    gap: 47px;
+}
+
+li a {
+    font-size: 1.5rem;
+    color: #E3F6F6;
+    font-weight: 700;
+}
+
+.active {
+    color: #ffff;
+}
+.active:hover {
+    color: #623932;
+    border-bottom: 2px solid #623932;
+}
+
+.noactive {
+    color: #ffff;
+}
+.noactive:hover {
+    color: #623932;
+    border-bottom: 2px solid #623932;
+}
+
+
+.fa-cart-shopping {
+    font-size: 1.5rem;
+    color: #ffff;
+}
+.burger-bar{
+    display: none;
+}
+/* დაიწყო section1 */
+.section1 {
+    width: 100%;
+    height: 678px;
+    position: relative;
+    background-image: url(../image/section.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section_text {
+    width: 90%;
+    font-family: 'Rubik';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    animation: section_text 5s ease-in-out ;
+}
+@keyframes section_text{
+    from{
+        left: 40%;
+        color: rgb(104, 104, 121);
+    }
+    to{
+        left: 50%;
+        color: #FFFFFF;
+    }
+}
+
+
+/* დაიწყო მეორე გვერდი  section1_div  */
+.section1_div {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #623932;
+    padding: 35px 38px 28px 34px;
+}
+
+.section1_title {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 41px;
+}
+
+.section1_text {
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* დაიწყო article */
+article {
+    width: 100%;
+    background-color: #6A7B98;
+    text-align: center;
+    padding: 70px 0 70px 0;
+}
+
+.title {
+    margin-bottom: 150px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.cards {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.card {
+    width: 28%;
+    padding: 33px 28px 30px 28px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 40px 40px 30px black;
+    cursor: pointer;
+    transition-duration: 2.5s;
+    /* animation: artwork 2s linear  1; */
+}
+
+.card_img {
+    width: 90%;
+    margin-bottom: 56px;
+}
+
+.card_img:hover {
+   
+    transition-duration: 2s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transform: scale(1.2);
+
+}
+.card_text {
+    color: #82625D;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+}
+/* დაიწყო  footer */
+footer {
+    width: 100%;
+    padding: 77px 100px;
+    background-color: #C0BA8F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_text {
+    font-size: 1.25rem;
+    color: #DDDBCB;
+    font-weight: 300;
+}
+
+.footer_logo {
+    font-size: 36px;
+    color: #F6F5F2;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 47px;
+}
+.fa-facebook-messenger,
+.fa-instagram,
+.fa-youtube {
+    font-size: 2rem;
+    border: #ddc4c4;
+    color: #ffffff;
+}
+
+.fa-facebook-messenger:hover {
+    font-size: 2.25rem;
+    color: rgb(21, 22, 22);
+}
+
+.fa-instagram:hover {
+    font-size: 2.25rem;
+    color:  rgb(21, 22, 22);
+}
+
+.fa-youtube:hover {
+    font-size: 2.25rem;
+    color: rgb(21, 22, 22);
+}
+/* @keyframes artwork{
+    0%{
+        transform: rotate(20deg);
+    }
+    20%{
+        transform: rotate(40deg);
+    }
+    40% {
+        transform: rotate(60deg)
+    }
+    60%{
+        transform: rotate(80deg)
+    }
+    80%{
+        transform: rotate(90deg)
+    }
+    100%{
+        transform: rotate(-90deg)
+    }
+} */
+
+
+
+/* მესამე გვერდი  */
+
+/* დაიწყო კონტაქტის contact-ის სექცია */
+
+
+.section_contact{
+    width: 100%;
+    padding: 89px 0px 84px 0px;
+    background-color: #6A7B98;
+    
+}
+
+.contact{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(237, 240, 245, 0.68);
+    border-radius: 15px;
+    padding: 35px 65px 35px 65px;
+    
+}
+
+
+/* დაიწყო კონტაქტის დიდი დივი */
+.info{
+    width: 42%;
+    }
+
+.contact_logo{
+    font-size: 2.5rem;
+    color: rgb(249, 14, 14);
+    box-shadow: none;
+    transition: linear .2s;
+    }
+
+.contact_logo:hover{
+    color: rgb(146, 155, 149);
+}
+
+.call, 
+.email, 
+.address{
+    display: flex;
+    gap: 40px;
+    }
+
+.email{
+    margin-top: 133px;
+    margin-bottom: 133px;
+}
+
+.text{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #623932;
+}
+
+.number{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+
+/* დაიწყო სარეგისტრაციო ფორმა */
+.forma{
+    width: 55%;
+    }
+
+.forma_1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.fullname, .email_address{
+    width: 48%;
+}
+
+#user,
+#email{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid #FFFFFF;
+    margin-top: 10px;
+    font-size: 1rem;
+    }
+
+.forma_1 label{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #F90E0E;
+}
+
+.message{
+    width: 100%;
+    height: 147px;
+    border: 4px solid #FFFFFF;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+#message{
+    width: 100%;font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #F7F5F2;
+    background-color: transparent;
+    padding-top: 9px;
+    padding-left: 9px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/* ღილაკი   */
+.submit{
+    width: 50%;
+    height: 88px;
+    background-color: #F90E0E;
+    border: 4px solid #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0px #FFFFFF;
+    transition: linear .4s;
+}
+
+.submit:hover{
+    background-color:  rgb(146, 155, 149);
+    cursor: pointer;
+    border-radius: 30px
+   }
